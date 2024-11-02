@@ -1,7 +1,8 @@
 #pragma once
 #include <stdint.h>
 
-enum PADDING_MODE {
+enum PADDING_MODE
+{
 	PADDING_MODE_CONSTANT,
 	PADDING_MODE_EDGE,
 	PADDING_MODE_REFLECT

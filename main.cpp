@@ -3,8 +3,6 @@
 #include "MyISP.h"
 #include "Config.h"
 
-#include "MyOpenCV.h"
-
 int main()
 {
 	int width = 1920, height = 1080;
@@ -54,7 +52,4 @@ int main()
 	fwrite(yuv.getData(), sizeof(PixelYUV) * height * width, 1, fp);
 	fclose(fp);
 
-	cv::Mat img = toCvMat(rgb);
-	cv::imshow("Image", img);
-	cv::waitKey();
 }
